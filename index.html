@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/tex-gyre-heros" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/tex-gyre-heros?styles=826" rel="stylesheet">
+
+	<style type="text/css">
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@import url('https://fonts.cdnfonts.com/css/tex-gyre-heros?styles=826');
+		html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%; /* html과 body의 height를 100%로 설정 */
+		}
+		p{font-family: 'Pretendard-Medium'; line-height: 1.5;letter-spacing: 0.2px; position: relative;
+    z-index: 2; font-size: 1.5rem;}
+		h2{font-size: 6.0rem; color: red; margin-top: 10px; margin-left: 10px; font-family: 'TeXGyreHerosCondensed', sans-serif;}
+	body,h1,h3,p,ul,li{margin: 0px;padding: 0px}
+	body,h1,p{margin: 0;}
+    body{background: lightgray; word-break: keep-all;}
+    h1{font-family: 'Roboto Mono', monospace; color: blue; font-size:7.5rem; text-align: center; border-bottom: 1.8px solid black; /* 밑줄 스타일 적용 */
+  padding-bottom: 12px; /* 밑줄과 텍스트 간격 조정 */}
+  nav {left: 0; width: 18%; bottom: 0; /* 화면의 위부터 아래까지 차지하도록 설정 */; background-color: lightgray; /* nav의 배경색을 body와 동일하게 설정 */ position: relative; border-right: 1.8px solid black; height: 100%;}
+ .omg-container {
+    width: 30%;
+    margin-bottom: 0;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 30px;
+    position: relative; /* 이 부분을 추가하여 자식 요소인 omg-overlay가 절대 위치를 제대로 잡을 수 있게 합니다 */
+    overflow: hidden;
+    z-index: 2;
+}
+ .omg {width: 100%;
+			height: auto;
+			transition: 0.3s ease;}
+.omg-overlay {
+    position: absolute; /* 절대 위치를 통해 부모 요소를 기준으로 위치를 잡습니다 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s ease;
+    font-size: 2.0rem;
+    text-align: center;
+}
+	.omg-container:hover .omg {
+			filter: brightness(50%);
+		}
+		.omg-container:hover .omg-overlay {
+			opacity: 1;
+		}
+  .menu li a{text-decoration: none;color: black;list-style-type: none;font-family: 'TeXGyreHerosCondensed', sans-serif; font-style: normal; font-size: 1.1rem;}
+  .line{border-bottom: 1.8px solid black; /* 각 메뉴 항목에 밑줄 스타일 적용 */
+      padding: 10px; /* 밑줄과 텍스트 간격 조정 */
+  list-style-type: none;
+text-decoration: none;}
+ .line2{border-bottom: 1.8px solid black; /* 각 메뉴 항목에 밑줄 스타일 적용 */
+      padding-left: 10px; /* 밑줄과 텍스트 간격 조정 */
+  list-style-type: none;
+text-decoration: none; padding-bottom: 10px}
+.noline{padding-top: 10px; padding-bottom: 2px; padding-left: 10px;}
+.noline2{padding-bottom: 2px; padding-left: 10px;}
+.menu .neon-g{background: #00FF00}
+.menu .neon-y{background: #FFFF00}
+.nav-l{position: relative;}
+.line3{border-bottom: 1.8px solid black; /* 각 메뉴 항목에 밑줄 스타일 적용 */
+      padding-left: 10px; /* 밑줄과 텍스트 간격 조정 */
+  list-style-type: none;
+text-decoration: none; padding-bottom: 10px; padding-top: 70px;}
+.line4{border-bottom: 1.8px solid black; /* 각 메뉴 항목에 밑줄 스타일 적용 */
+      padding-left: 10px; /* 밑줄과 텍스트 간격 조정 */
+  list-style-type: none;
+text-decoration: none; padding-bottom: 10px; padding-top: 15px; padding-right: 10px;}
+  .container {
+    display: flex; height: 100vh;
+  }
+.pd{padding-top: 215px; }
+.menu .red-text {color: red;}
+.menu .underline-text {text-decoration: underline;}
+.underline-text {text-decoration: underline;}
+  section {flex-grow: 1; width: 82%; padding-left: 20px; overflow: auto;}
+ .m1{padding-bottom: 80px; color: red; font-size: 3.0rem; width: 90%;}
+  .m2{padding-bottom: 20px; padding-top: 50px; width: 80%;}
+ .pd-l20{padding-left: 20px; padding-right: 20px}
+.fl{display: flex; flex-wrap: wrap;}
+.omg2{position: sticky;
+    width: 80%;
+    top: 55%;
+    left: 40%;
+    transform: translate(-10%, -40%);
+    z-index: 1;
+    margin-bottom: 0}
+   .omg3{width: 70%; padding-top: 20px}
+	</style>
+</head>
+<body>
+<h1><font color=#9D9D9D>Fake</font> Modern Art <font color=#9D9D9D>Archive</font></h1>
+<div class="container">
+<nav>
+	<ul class="menu">
+			<li class="line"><a>What is Modern Art</a></li>
+			<li class="noline"><a href="https://eun28.github.io/5.22-con-/">Concept</a></li>
+			<li class="noline2"><a class="red-text" href="#ccc">Criticism</a></li>
+			<li class="noline2"><a class="underline-text" href="https://eun28.github.io/final.3/">Freedom</a></li>
+			<li class="line2"><a href="#ddd">Methodology</a></li>
+			<li class="line"><a>Do you want more?</a></li>
+			<li class="noline"><a class="neon-g underline-text" href="https://www.google.com/search?q=%ED%98%84%EB%8C%80%EB%AF%B8%EC%88%A0&oq=%ED%98%84%EB%8C%80%EB%AF%B8%EC%88%A0&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGD0yBggDEEUYPNIBBzk5NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank">Google↗️</a></li>
+			<li class="line2"><a class="neon-y underline-text" href="https://namu.wiki/w/%ED%98%84%EB%8C%80%EB%AF%B8%EC%88%A0" target="_blank">Namu Wiki^^↗️</a></li>
+			<div class="line3"></div>
+			<li class="noline"><a>This website started as a skein of modern art-like visuals on Twitter.</a></li>
+			<li class="line4"><a>Ironic images on the Internet, which can become works of art just by attaching a concept to them, can either make you laugh or cause discomfort.</a></li>
+			<li class="noline"><a>Thanks to @gonsol95</a></li>
+			<div class="pd"></div>
+		</ul>
+</nav>
+<section class="nav-l">
+<div class="fl">
+<div class="omg-container">
+	<img src="image1.png" class="omg">
+	<div class="omg-overlay">①</div>
+</div><div class="omg-container">
+	<img src="image2.png" class="omg">
+	<div class="omg-overlay">②</div>
+</div><div class="omg-container">
+	<img src="image3.png" class="omg">
+	<div class="omg-overlay">③</div>
+</div><div class="omg-container">
+	<img src="image4.png" class="omg">
+	<div class="omg-overlay">④</div>
+</div><div class="omg-container">
+	<img src="image5.png" class="omg">
+	<div class="omg-overlay">⑤</div>
+</div><div class="omg-container">
+	<img src="image6.png" class="omg">
+	<div class="omg-overlay">⑥</div>
+</div><div class="omg-container">
+	<img src="image7.png" class="omg">
+	<div class="omg-overlay">⑦</div>
+</div><div class="omg-container">
+	<img src="image8.png" class="omg">
+	<div class="omg-overlay">⑧</div>
+</div><div class="omg-container">
+	<img src="image9.png" class="omg">
+	<div class="omg-overlay">⑨</div>
+</div><div class="omg-container">
+	<img src="image10.png" class="omg">
+	<div class="omg-overlay">⑩</div>
+</div><div class="omg-container">
+	<img src="image11.png" class="omg">
+	<div class="omg-overlay">⑪</div>
+</div>
+</div>
+<img src="banana.png" class="omg2">
+	<p class="m1 pd-l20">1 - 4살 아이 그림<br>2 - 현대미술작품 (“A tree in Naples” by Willem de Kooning)<br>3- 4살 아이 그림<br>4 - 4살 아이 그림<br>5 - 현대미술작품 (“Laburnum” by Hans Hoffman)<br>6 - 현대미술작품 (“Woods” by Gerhard Richter)<br>7 - 4살 아이 그림<br>8 - 4살 아이 그림<br>9 - 4살 아이 그림<br>10 - 현대미술작품 (“Coffee Thyme” by Sam Gilliam)<br>11 - 4살 아이 그림</p>
+	<p class="m2 pd-l20 pd-t">거칠게 말하면 '어린아이 그림을 들고와서 이빨만 잘 까면 가치가 생기는 것'을 현대미술이라고 생각한다. 현대미술에는 늘 이런저런 설명이 있고 어떠한 의도로 만들었다고 하지만, 반대로 막 그려놓고 그럴 듯한 의미를 말빨로 창조해냈을 것이라는 추측 또한 있다. 작품의 기술적 수준, 미술품 평가의 객관적인 기준 부재, 엇나간 수요와 공급, 현대예술과 대중예술 사이 장벽, 투기와 탈세 수단, 소수의 고액 후원자에 의한 과대평가, 부조리한 주종 관계, 자질 검증의 노력 부족, 위작, 과도한 학벌주의, 빈부격자 방관 등 현대미술에 대한 논쟁이 존재한다. 하지만 입으로 하는 예술, 난잡한 행위와 얽힌 예술에 대한 반감은 단편적인 비난일뿐이다.</p>
+	<p class="m2 pd-l20 pd-t">현대미술은 예술가의 생각이나 감정을 표현하는데 집중하기 때문에 작품에서 미술가가 무엇을 나타내고자 하는지, 그것을 위해 어떠한 독창적인 표현법이 사용되었는지가 중요하다. 따라서 미술가는 ‘잘 만든’ 작품에 집착하기보다 자신이 표현하고자 하는 바를 자신만의 방식으로 표현하는 것을 중시한다. 현대미술은 작품 그 자체를 중요하게 여기지만, 이와 함께 그것을 받아들이는 관람자의 여러 가지 해석도 중시한다. 왜냐하면 작품이 받아들여지는 과정 또한 현대미술을 구성하는 중요한 요소라고 여기기 때문이다. 또한 현대미술은 다양한 방식으로 표현된 미술가의 생각을 담고 있으면서, 감상자의 자유로운 해석과 상상을 자극한다. 따라서 우리가 이러한 현대미술의 특징을 이해한다면 그것에 조금 더 편안하게 접근할 수 있는 길도 열리게 된다.</p>
+	<img src="out.png" class="omg3">
+</section>
+</div>
+</body>
+</html>
